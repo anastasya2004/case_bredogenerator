@@ -14,9 +14,8 @@ for i in range(len(pairs)):
     w1 = pairs[i][0]
     w2 = pairs[i][1]
     if w1 in dict_word.keys():
-        dict_word[w1] = dict_word.get(w1), w2
+        dict_word[w1].append(w2)
     else:
-        dict_word[pairs[i][0]] = pairs[i][1]
-        
+        dict_word[w1] = [w2]
 
-#print(dict_word)
+
