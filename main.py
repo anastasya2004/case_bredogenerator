@@ -18,4 +18,12 @@ for i in range(len(pairs)):
     else:
         dict_word[w1] = [w2]
 
+def create_delusion(dict_word, first_word, numbers_words):
+    word = first_word
+    text_delusion = [word]
+    for x in range(numbers_words - 1):
+        next_word = random.choice(dict_word[word])
+        text_delusion.append(next_word)
+        word = next_word
+    return ' '.join(text_delusion)
 
