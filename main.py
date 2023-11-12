@@ -1,0 +1,20 @@
+text = 'Метель в поле страшная. Колкий снег бьёт и колет всё живое. Но в лесу снег рыхлый и от собаки даже проваливается. Сквозь метель Жулька увидела летящую птичку и со всех ног бросилась за ней по снегу. Птичка плавно порхала, поднималась вверх и вертелась в волнах ветра. Она догнала, схватила, но это была не птичка, а старый сухой дубовый лист. Но ничего! Вот другой летит, и собака уже бежит за ним'
+#text = input()
+
+lst_word = text.split()
+
+pairs = []
+for i in range(len(lst_word) - 1):
+    pairs.append([lst_word[i], lst_word[i+1]])
+
+dict_word = {}
+for i in range(len(pairs)):
+    w1 = pairs[i][0]
+    w2 = pairs[i][1]
+    if w1 in dict_word.keys():
+        dict_word[w1] = dict_word.get(w1), w2
+    else:
+        dict_word[pairs[i][0]] = pairs[i][1]
+        
+
+#print(dict_word)
