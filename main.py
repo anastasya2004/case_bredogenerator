@@ -1,3 +1,4 @@
+Makeeva Angelina 55%
 import random
 import string
 
