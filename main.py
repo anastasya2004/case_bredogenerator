@@ -1,4 +1,5 @@
-Makeeva Angelina 55%
+#Makeeva Angelina 55%
+#Osokina Anastasya 72%
 import random
 import string
 
